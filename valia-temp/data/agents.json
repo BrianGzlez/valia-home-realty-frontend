@@ -1,0 +1,38 @@
+[
+  {
+    "id": "agent_001",
+    "slug": "maria-rodriguez",
+    "name": "María Rodríguez",
+    "email": "maria@valiahome.com",
+    "phone": "+1-809-555-0101",
+    "whatsapp": "+1-809-555-0101",
+    "photoUrl": "/placeholder.svg?height=200&width=200",
+    "bio": "Especialista en propiedades de lujo con más de 8 años de experiencia en el mercado inmobiliario dominicano.",
+    "licenseNumber": "RE-2024-001",
+    "status": "active"
+  },
+  {
+    "id": "agent_002",
+    "slug": "carlos-martinez",
+    "name": "Carlos Martínez",
+    "email": "carlos@valiahome.com",
+    "phone": "+1-809-555-0102",
+    "whatsapp": "+1-809-555-0102",
+    "photoUrl": "/placeholder.svg?height=200&width=200",
+    "bio": "Experto en propiedades históricas y comerciales, con amplio conocimiento de la Zona Colonial.",
+    "licenseNumber": "RE-2024-002",
+    "status": "active"
+  },
+  {
+    "id": "agent_003",
+    "slug": "ana-garcia",
+    "name": "Ana García",
+    "email": "ana@valiahome.com",
+    "phone": "+1-809-555-0103",
+    "whatsapp": "+1-809-555-0103",
+    "photoUrl": "/placeholder.svg?height=200&width=200",
+    "bio": "Especializada en propiedades residenciales y de inversión en las mejores zonas de Santo Domingo.",
+    "licenseNumber": "RE-2024-003",
+    "status": "active"
+  }
+]

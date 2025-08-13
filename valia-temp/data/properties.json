@@ -1,0 +1,105 @@
+[
+  {
+    "id": "prop_001",
+    "slug": "apartamento-moderno-piantini",
+    "title": "Apartamento Moderno en Piantini",
+    "description": "Hermoso apartamento de 3 habitaciones en el corazón de Piantini, con acabados de lujo y vista panorámica.",
+    "operation": "venta",
+    "propertyType": "apartamento",
+    "status": "activa",
+    "price": 285000,
+    "currency": "USD",
+    "maintenanceFee": 350,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": 2,
+    "areaBuilt": 145,
+    "floor": 8,
+    "yearBuilt": 2020,
+    "furnished": false,
+    "amenities": ["Piscina", "Gimnasio", "Seguridad 24/7", "Ascensor", "Balcón"],
+    "city": "Santo Domingo",
+    "zone": "Piantini",
+    "address": "Av. Abraham Lincoln",
+    "agentId": "agent_001",
+    "media": [
+      {
+        "id": "media_001",
+        "url": "/placeholder.svg?height=400&width=600",
+        "type": "image",
+        "order": 1
+      }
+    ],
+    "featured": true,
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": "prop_002",
+    "slug": "casa-colonial-zona-colonial",
+    "title": "Casa Colonial en Zona Colonial",
+    "description": "Encantadora casa colonial restaurada con patio interior y detalles arquitectónicos originales.",
+    "operation": "alquiler",
+    "propertyType": "casa",
+    "status": "activa",
+    "price": 2500,
+    "currency": "USD",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "parking": 1,
+    "areaBuilt": 220,
+    "areaLot": 180,
+    "yearBuilt": 1920,
+    "furnished": true,
+    "amenities": ["Patio", "Terraza", "Aire Acondicionado", "Internet"],
+    "city": "Santo Domingo",
+    "zone": "Zona Colonial",
+    "address": "Calle Las Damas",
+    "agentId": "agent_002",
+    "media": [
+      {
+        "id": "media_002",
+        "url": "/placeholder.svg?height=400&width=600",
+        "type": "image",
+        "order": 1
+      }
+    ],
+    "featured": true,
+    "createdAt": "2024-01-10T14:30:00Z",
+    "updatedAt": "2024-01-10T14:30:00Z"
+  },
+  {
+    "id": "prop_003",
+    "slug": "villa-lujo-cap-cana",
+    "title": "Villa de Lujo en Cap Cana",
+    "description": "Espectacular villa frente al mar con piscina privada y acceso directo a la playa.",
+    "operation": "venta",
+    "propertyType": "villa",
+    "status": "reservada",
+    "price": 1250000,
+    "currency": "USD",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "parking": 3,
+    "areaBuilt": 380,
+    "areaLot": 800,
+    "yearBuilt": 2019,
+    "furnished": true,
+    "amenities": ["Piscina Privada", "Playa Privada", "Jardín", "BBQ", "Seguridad"],
+    "city": "Punta Cana",
+    "zone": "Cap Cana",
+    "address": "Marina Cap Cana",
+    "agentId": "agent_001",
+    "media": [
+      {
+        "id": "media_003",
+        "url": "/placeholder.svg?height=400&width=600",
+        "type": "image",
+        "order": 1
+      }
+    ],
+    "featured": true,
+    "createdAt": "2024-01-05T09:15:00Z",
+    "updatedAt": "2024-01-20T16:45:00Z"
+  }
+]
