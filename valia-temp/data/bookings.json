@@ -1,0 +1,24 @@
+[
+  {
+    "id": "book_001",
+    "propertyId": "prop_001",
+    "name": "Roberto Silva",
+    "email": "roberto.silva@email.com",
+    "phone": "+1-809-555-2001",
+    "datetime": "2024-01-25T14:00:00-04:00",
+    "notes": "Prefiero visita en la tarde",
+    "status": "confirmed",
+    "createdAt": "2024-01-18T11:20:00Z"
+  },
+  {
+    "id": "book_002",
+    "propertyId": "prop_003",
+    "name": "Patricia Morales",
+    "email": "patricia.morales@email.com",
+    "phone": "+1-809-555-2002",
+    "datetime": "2024-01-26T10:30:00-04:00",
+    "notes": "Interesada en inversión",
+    "status": "pending",
+    "createdAt": "2024-01-19T09:15:00Z"
+  }
+]
