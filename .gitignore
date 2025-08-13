@@ -1,0 +1,47 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (pero sí versiona .env.example)
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# editor/OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# test/coverage
+coverage/
+.nyc_output
+.eslintcache
+
+# turbo / caches opcionales
+.turbo/
+.cache/
+
+# storybook (si lo usas)
+storybook-static/
+
+# uploads locales (si llegas a guardarlos en /public/uploads)
+# public/uploads/

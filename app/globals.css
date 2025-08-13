@@ -1,0 +1,243 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Replaced luxury palette with exact Valía brand tokens */
+  /* Valía Brand Colors */
+  --valia-primary: #c58a3a; /* dorado del logo (brand) */
+  --valia-primary-600: #af7a33; /* hover btn */
+  --valia-primary-700: #8f6329; /* active btn */
+
+  --valia-ink: #1f1e1c; /* texto principal */
+  --valia-muted: #6b6760; /* texto secundario */
+
+  --valia-bg: #f2efea; /* fondo general cálido */
+  --valia-surface: #ffffff; /* tarjetas / modales */
+  --valia-border: #ddd6c8; /* bordes suaves */
+  --valia-chip: #e9e4db; /* chips/etiquetas neutras */
+
+  --valia-success: #2e7d32;
+  --valia-warning: #b7791f;
+  --valia-danger: #b91c1c;
+  --valia-info: #2563eb;
+
+  /* Map Valía tokens to Tailwind CSS variables for compatibility */
+  --background: var(--valia-bg);
+  --foreground: var(--valia-ink);
+  --card: var(--valia-surface);
+  --card-foreground: var(--valia-ink);
+  --popover: var(--valia-surface);
+  --popover-foreground: var(--valia-ink);
+  --primary: var(--valia-primary);
+  --primary-foreground: #ffffff;
+  --secondary: var(--valia-chip);
+  --secondary-foreground: var(--valia-ink);
+  --muted: var(--valia-chip);
+  --muted-foreground: var(--valia-muted);
+  --accent: var(--valia-primary);
+  --accent-foreground: #ffffff;
+  --destructive: var(--valia-danger);
+  --destructive-foreground: #ffffff;
+  --border: var(--valia-border);
+  --input: var(--valia-border);
+  --ring: var(--valia-primary);
+  --chart-1: var(--valia-primary);
+  --chart-2: var(--valia-info);
+  --chart-3: var(--valia-success);
+  --chart-4: var(--valia-warning);
+  --chart-5: var(--valia-danger);
+  --radius: 0.75rem;
+  --sidebar: var(--valia-surface);
+  --sidebar-foreground: var(--valia-ink);
+  --sidebar-primary: var(--valia-primary);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--valia-chip);
+  --sidebar-accent-foreground: var(--valia-ink);
+  --sidebar-border: var(--valia-border);
+  --sidebar-ring: var(--valia-primary);
+}
+
+.dark {
+  /* Dark mode using Valía tokens with appropriate contrast */
+  --background: #0f0e0d;
+  --foreground: var(--valia-surface);
+  --card: #1a1917;
+  --card-foreground: var(--valia-surface);
+  --popover: #1a1917;
+  --popover-foreground: var(--valia-surface);
+  --primary: var(--valia-primary);
+  --primary-foreground: #ffffff;
+  --secondary: #2a2825;
+  --secondary-foreground: var(--valia-surface);
+  --muted: #2a2825;
+  --muted-foreground: #a8a29e;
+  --accent: var(--valia-primary);
+  --accent-foreground: #ffffff;
+  --destructive: var(--valia-danger);
+  --destructive-foreground: #ffffff;
+  --border: #2a2825;
+  --input: #2a2825;
+  --ring: var(--valia-primary);
+  --chart-1: var(--valia-primary);
+  --chart-2: var(--valia-info);
+  --chart-3: var(--valia-success);
+  --chart-4: var(--valia-warning);
+  --chart-5: var(--valia-danger);
+  --sidebar: #1a1917;
+  --sidebar-foreground: var(--valia-surface);
+  --sidebar-primary: var(--valia-primary);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2a2825;
+  --sidebar-accent-foreground: var(--valia-surface);
+  --sidebar-border: #2a2825;
+  --sidebar-ring: var(--valia-primary);
+}
+
+@theme inline {
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-open-sans);
+
+  /* Updated theme colors to use Valía tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--valia-danger);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Valía brand utility classes */
+.text-valia-primary {
+  color: var(--valia-primary);
+}
+
+.bg-valia-primary {
+  background-color: var(--valia-primary);
+}
+
+.border-valia-primary {
+  border-color: var(--valia-primary);
+}
+
+.hover\:bg-valia-primary-600:hover {
+  background-color: var(--valia-primary-600);
+}
+
+.active\:bg-valia-primary-700:active {
+  background-color: var(--valia-primary-700);
+}
+
+.text-valia-ink {
+  color: var(--valia-ink);
+}
+
+.text-valia-muted {
+  color: var(--valia-muted);
+}
+
+.bg-valia-bg {
+  background-color: var(--valia-bg);
+}
+
+.bg-valia-surface {
+  background-color: var(--valia-surface);
+}
+
+.border-valia-border {
+  border-color: var(--valia-border);
+}
+
+.bg-valia-chip {
+  background-color: var(--valia-chip);
+}
+
+.text-valia-success {
+  color: var(--valia-success);
+}
+
+.bg-valia-success {
+  background-color: var(--valia-success);
+}
+
+.bg-valia-success\/10 {
+  background-color: rgb(from var(--valia-success) r g b / 0.1);
+}
+
+.text-valia-warning {
+  color: var(--valia-warning);
+}
+
+.bg-valia-warning {
+  background-color: var(--valia-warning);
+}
+
+.bg-valia-warning\/10 {
+  background-color: rgb(from var(--valia-warning) r g b / 0.1);
+}
+
+.text-valia-danger {
+  color: var(--valia-danger);
+}
+
+.bg-valia-danger {
+  background-color: var(--valia-danger);
+}
+
+.bg-valia-danger\/10 {
+  background-color: rgb(from var(--valia-danger) r g b / 0.1);
+}
+
+.text-valia-info {
+  color: var(--valia-info);
+}
+
+.bg-valia-info {
+  background-color: var(--valia-info);
+}
+
+.bg-valia-info\/10 {
+  background-color: rgb(from var(--valia-info) r g b / 0.1);
+}
+
+.bg-valia-primary\/10 {
+  background-color: rgb(from var(--valia-primary) r g b / 0.1);
+}
